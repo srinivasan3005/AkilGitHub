@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>mywebpage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+             {
+                box-sizing: border-box;
+            }
+
+            /* Style the body */
+            body {
+                font-family: Arial;
+                margin: 0;
+            }
+
+            /* Header/logo Title */
+            .header {
+                padding: 80px;
+                text-align: center;
+                background: #1abc9c;
+                color: black;
+            }
+
+            /* Increase the font size of the heading */
+            .header h1 {
+                font-size: 50px;
+            }
+
+            /* Style the top navigation bar */
+            .navbar {
+                overflow: hidden;
+                background-color: #ff0000;
+            }
+
+            /* Style the navigation bar links */
+            .navbar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+
+            /* Right-aligned link */
+            .navbar a.auto {
+                float: auto;
+            }
+
+            /* Change color on hover */
+            .navbar a:hover {
+                background-color: #00ff00;
+                color: blue;
+            }
+
+            /* Column container */
+            .row {
+                display: -ms-flexbox; /* IE10 */
+                display: flex:10%
+                -ms-flex-wrap: wrap; /* IE10 */
+                flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that sits next to each other */
+            /* Sidebar/left column */
+            .side {
+                -ms-flex: 10%; /* IE10 */
+                flex: 10%;
+                background-color: #f1f1f1;
+                padding: 40px;
+            }
+
+            /* Main column */
+            .main {
+                -ms-flex: 60%; /* IE10 */
+                flex: 60%;
+                background-color: red;
+                padding: 20px;
+            }
+
+            /* Fake image, just for this example */
+            .fakeimg {
+                background-color: #aaa;
+                width: 25%;
+                padding: 20px;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #fff;
+            }
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 700px) {
+                .row {
+                    flex-direction: column;
+                }
+            }
+
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+                .navbar a {
+                    float: none;
+                    width: 100%;
+                }
+            }
+            li{
+                list-style-type: none;
+                margin: 0 20px;
+            }
+            ul{
+            display: flex;
+            }
+            </style>
+                </head>
+    <body>
+
+            <div class="header">
+                <h1>AKILESH SRINIVASAN</h1>
+                <p>UI DEVELOPER</p>
+            </div>
+
+            <div class="navbar">
+                <a href="#">LOG IN</a>
+                <a href="#">SIGN IN</a>
+            </div>
+
+            <div class="row">
+                <div class="side">
+                    <div PROFILE PHOTO style="height:960px; width = 960px;"><Img src="my.jpg"> </div>
+                    <p>MY LIFE MY RULES</p>
+                    <h3>I DREAM MY PAINTING AND PAINT MY DREAM.</h3>
+                    <div class="fakeimg" style="height:60px;"><Img src="D.jpg"> </div><br>
+                </div>
+                <div class="main">
+                    <h2>BORN TO WIN !!!</h2>
+                    <h5>DANGA MAARI OODARI PUTUKANA NE NAARI</h5>
+
+            <div class="footer">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="linkedin.com/in/akilesh-srinivasan-3b9b68108">LINKEDIN</a>
+
+                        </li>
+                        <li>
+                            <a href ="https://www.facebook.com/">FACEBOOK</a>
+                        </li>
+                        <li>
+                            <a href="www.gmail.com">GMAIL</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+    </body>
+</html>

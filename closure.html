@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      div {
+        background-color: red;
+        height: 100px;
+        width: 25%;
+        float: left;
+      }
+    </style>
+</head>
+<body>
+    <script>
+                <!--(function(){-->
+            <!--var alphaa =-->
+            <!--[{-->
+            <!--firstName : 'aakk',-->
+            <!--lastName : 'ssd'-->
+        <!--},{-->
+            <!--Address : 'sdcd',-->
+            <!--Age : 343-->
+            <!---->
+            <!---->
+        <!--}];-->
+            <!--console.log(alphaa[0].firstName);-->
+
+        <!--})();-->
+
+            <!--function xyz(value){-->
+                <!--return (value > 10);-->
+                <!--}-->
+            <!--var b = [9,16,25,100];-->
+            <!--var n = b.map(Math.sqrt);-->
+            <!--console.log(n);-->
+
+            <!--var omega = new Array();-->
+            <!--omega[0] = 'aa';-->
+            <!--omega[1] = 'nn';-->
+            <!--omega.fill('ll');-->
+            <!--console.log(omega);-->
+    <!--function myName(a, b){-->
+        <!--this.firstName = a;-->
+        <!--this.lastName = b;-->
+        <!--}-->
+        <!--var x = new myName("akil", "sri");-->
+        <!--x.firstName;-->
+        <!--function myName(){-->
+            <!--var global = "akil";-->
+            <!--function xyz(){-->
+            <!--var b = "sri";-->
+            <!--function ak(){-->
+            <!--var global = "jessy";-->
+            <!--console.log(b);-->
+            <!--}-->
+            <!--ak();-->
+
+            <!--}-->
+            <!--xyz();-->
+            <!--}-->
+            <!--myName();-->
+            <!--(function(){-->
+            <!--var test = 10;-->
+            <!--function addition(){-->
+                <!--this.test2 = 20;-->
+                <!--this.output = function(){-->
+                <!--return (test + this.test2);-->
+                <!--}-->
+                <!--}-->
+                <!--var result = new addition();-->
+                 <!--console.log(result.output());-->
+
+                <!--})();-->
+                <!--function sum(){-->
+                <!--this.a = 1;-->
+                <!--this.b = 2;-->
+                <!--this.d = function aj(){-->
+                    <!--var z = this.a + 10;-->
+                    <!--var s = this.b + 12;-->
+                    <!--return (z * s);-->
+
+
+                    <!--};-->
+                <!--this.c = this.a + this.b + this.d();-->
+
+                <!--}-->
+                <!--var x = new sum();-->
+                <!--console.log(x.c);-->
+                <!--function time(){-->
+                    <!--var currentTime = new Date();-->
+                    <!--var h = currentTime.getHours;-->
+                    <!--var m = currentTime.getMinutes;-->
+                    <!--var s = currentTime.getSeconds;-->
+                    <!--document.getElementById('time').innerHTML = h +":" + m +":"+ s;-->
+                    <!--var t = setTimeout(time, 500);-->
+                    <!--}-->
+                    <!--time();-->
+                     <!--var t = new Date(dateString);-->
+                     <!--console.log(t.getHours() + ":" + t.getMinutes() + ":" + t.getSeconds());-->
+                     <!--function Hello(){-->
+                        <!--setTimeout("alert('r u akil')", 5000);-->
+                         <!--}-->
+                         <!--Hello();-->
+                       <!--function printNumbers(from, to) {-->
+                      <!--let current = from;-->
+
+                      <!--setTimeout(function go() {-->
+                        <!--alert(current);-->
+                        <!--if (current < to) {-->
+                          <!--setTimeout(go, 1000);-->
+                        <!--}-->
+                        <!--current++;-->
+                      <!--}, 1000);-->
+                    <!--}-->
+
+                    <!--printNumbers(5, 30);-->
+                    <!--let i = setTimeout(function Num(){-->
+
+                    <!--alert('Num');-->
+                    <!--i = setTimeout(Num, 5000);-->
+                    <!--}, 1000);-->
+                       for(var i = 1; i <= 16; i++) {
+                        var myDiv = document.createElement('div');
+                        document.body.appendChild(myDiv);
+                      }
+                      function random(number) {
+                        return Math.floor(Math.random()*number);
+                      }
+                      function bgChange() {
+                        var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+                        return rndCol;
+                      }
+                      var divs = document.querySelectorAll('div');
+                      for(var i = 0; i < divs.length; i++) {
+                        divs[i].onclick = function(e) {
+                          e.target.style.backgroundColor = bgChange();
+                        }
+                      }
+    </script>
+
+
+</body>
+</html>
